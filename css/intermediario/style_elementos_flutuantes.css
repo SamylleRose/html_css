@@ -12,7 +12,7 @@
   width: 150px;
   margin: 10px;
   height: 150px;
-  float: right;
+  float: center;
 }
 .clear {
   clear: both;
