@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Degradês e Transparências</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background: #f0f0f0;
+      }
+
+      .container {
+        text-align: center;
+      }
+
+      .elemento-linear-vertical {
+        width: 200px;
+        height: 100px;
+        background: linear-gradient(blue, white);
+        margin: 20px;
+        border-radius: 10px;
+      }
+
+      .elemento-radial {
+        width: 200px;
+        height: 100px;
+        background: radial-gradient(circle, purple, pink);
+        margin: 20px;
+        border-radius: 10px;
+      }
+
+      .elemento-rgba {
+        width: 200px;
+        height: 100px;
+        background-color: rgba(255, 0, 0, 0.5);
+        margin: 20px;
+        border-radius: 10px;
+      }
+
+      .elemento-opacity {
+        width: 200px;
+        height: 100px;
+        background-color: green;
+        opacity: 0.8;
+        margin: 20px;
+        border-radius: 10px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="elemento-linear-vertical">Linear</div>
+      <div class="elemento-radial">Radial</div>
+      <div class="elemento-rgba">RGBA</div>
+      <div class="elemento-opacity">Opacity</div>
+    </div>
+  </body>
+</html>

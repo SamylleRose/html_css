@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sombras em CSS</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background: #f0f0f0;
+      }
+
+      .container {
+        text-align: center;
+      }
+
+      .elemento-sombra-simples {
+        width: 200px;
+        height: 100px;
+        background-color: white;
+        box-shadow: 10px 10px 5px grey;
+        margin: 20px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .elemento-sombra-interna {
+        width: 200px;
+        height: 100px;
+        background-color: white;
+        box-shadow: inset 0 0 10px black;
+        margin: 20px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .texto-sombra-simples {
+        font-size: 24px;
+        color: #333;
+        text-shadow: 2px 2px 2px grey;
+      }
+
+      .texto-sombra-difusa {
+        font-size: 24px;
+        color: #333;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="elemento-sombra-simples">Sombra Simples</div>
+      <div class="elemento-sombra-interna">Sombra Interna</div>
+      <div class="texto-sombra-simples">Texto com Sombra Simples</div>
+      <div class="texto-sombra-difusa">Texto com Sombra Difusa</div>
+    </div>
+  </body>
+</html>

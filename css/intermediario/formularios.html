@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style type="text/css">
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        margin: 0;
+      }
+
+      form {
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        max-width: 400px;
+        width: 100%;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      textarea,
+      select {
+        width: calc(100%);
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+
+      textarea {
+        height: 100px;
+      }
+
+      fieldset {
+        border: 1px solid #ccc;
+        padding: 10px;
+        border-radius: 4px;
+        margin-bottom: 15px;
+      }
+
+      legend {
+        font-weight: bold;
+      }
+
+      input[type="radio"],
+      input[type="checkbox"] {
+        margin-right: 10px;
+      }
+
+      button[type="submit"] {
+        background-color: #5cb85c;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      button[type="submit"]:hover {
+        background-color: #4cae4c;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <label for="name">Nome:</label>
+      <input type="text" id="name" name="name" />
+
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email" />
+
+      <label for="mensagem">Mensagem:</label>
+      <textarea name="mensagem" id="">mensagem</textarea>
+
+      <label for="Cor favorita:"></label>
+      <select name="cor" id="cor">
+        <option value="vermelho">Vermelho</option>
+        <option value="azul">Azul</option>
+        <option value="verde">Verde</option>
+      </select>
+
+      <fieldset>
+        <legend>Gênero</legend>
+        <label
+          ><input
+            type="radio"
+            name="genero"
+            value="masculino"
+          />Masculino</label
+        >
+        <label
+          ><input type="radio" name="genero" value="feminino" />Feminino</label
+        >
+        <label><input type="radio" name="genero" value="outros" />Outros</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Interesses</legend>
+        <label
+          ><input
+            type="checkbox"
+            name="interesse"
+            value="tecnologia"
+          />Tecnologia</label
+        >
+        <label
+          ><input
+            type="checkbox"
+            name="interesse"
+            value="esporte"
+          />Esporte</label
+        >
+        <label
+          ><input
+            type="checkbox"
+            name="interesse"
+            value="musica"
+          />Música</label
+        >
+      </fieldset>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </body>
+</html>
